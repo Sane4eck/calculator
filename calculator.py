@@ -54,3 +54,4 @@ while True:
     else:
         print("Вы ввели " + str(number1) + " не число")
         continue
+print("Hi!")
