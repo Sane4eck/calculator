@@ -1,4 +1,3 @@
-
 def calculator():
     num1 = float(number1)
     num2 = float(number2)
@@ -30,14 +29,39 @@ def znak():
     else:
         n = 1
 
+
 def start():
     pass
 
+
+# while True:
+#     choise = str(input("Запустить калькулятор? 1 - да, N - нет  "))
+#     number1 = float(input("Введите число: "))
+#     if number1 == int or float:
+#         if choise == '1':
+#             znak()
+#             if n == 1:
+#                 print("Нет такой функции! ")
+#                 continue
+#             elif n == 0:
+#                 number2 = float(input("Введите еще одно число: "))
+#                 if number2 == int or float:
+#                     calculator()
+#                 else:
+#                     print("Вы ввели не число")
+#                     continue
+#         else:
+#             break
+#     else:
+#         print("Вы ввели " + str(number1) + " не число")
+#         continue
+# print("Hi!")
+
 while True:
     choise = str(input("Запустить калькулятор? 1 - да, N - нет  "))
-    number1 = float(input("Введите число: "))
-    if number1 == int or float:
-        if choise == '1':
+    if choise == '1':
+        number1 = float(input("Введите число: "))
+        if number1 == int or float:
             znak()
             if n == 1:
                 print("Нет такой функции! ")
@@ -52,6 +76,5 @@ while True:
         else:
             break
     else:
-        print("Вы ввели " + str(number1) + " не число")
-        continue
-print("Hi!")
+        break
+print("Goodbye!!!")
